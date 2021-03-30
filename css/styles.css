@@ -4,3 +4,10 @@ h1 {
    .tagilista ul{
        color: black;
    }
+   ul{
+       outline: 4px solid black;
+       width: 10%;
+   }
+   p{
+       width: 35%;
+   }
