@@ -1,13 +1,61 @@
-h1 {
+* {
+    font-family: 'Comic Sans MS';
+}
+
+h1
+{
     color: rgb(17, 16, 16);
-   }
-   .tagilista ul{
-       color: black;
-   }
-   ul{
-       outline: 4px solid black;
-       width: 10%;
-   }
-   p{
-       width: 35%;
-   }
+    font-size: 3em;
+}
+
+.tagilista ul
+{
+    color: black;
+}
+
+ul
+{
+    outline: 2.4px solid black;
+    width: 10%;
+}
+
+li
+{
+    text-align: left;
+}
+
+p
+{
+    width: 70%;
+}
+
+.parallax
+{
+    background-image: url('../kuvat/taivaskuva.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 270px;
+    margin-left: 0em;
+    margin-right: 0em;
+    padding: 0em;
+}
+
+.tyylikki
+{
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 50%;
+    background-color:rgba(10, 50, 70, 0.15);
+    padding-bottom: 3.5em;
+}
+
+body
+{
+    background-image: url('../kuvat/taivaskuva.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
