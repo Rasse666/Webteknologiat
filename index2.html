@@ -3,37 +3,56 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>damn</title>
+        <title>Lomaketehtävä</title>
         <link rel="stylesheet" href="css2/styles2.css">
+        
     </head>
     
     <body>
-        <section>
-            <div class="container">
-                <form class="form1">
-                    <div class=kontaktitiedot>Contact information:</div>
-                    <div class=kontaktimetodit>Preferred contact method:</div>
-                    <div class="form-group">
-                        <label for="First name:"> First name:</label>
-                        <input type="text" id="First name:" name="First name:">
-                    </div>   
+        <div class="origcont">
+            <fieldset class=container1> 
+            <legend>Contact information:</legend>      
+            <div class="form-group">
+                <label for="First name:"> First name:</label>
+                <input type="text" id="First name:" name="First name:">
+                <label>Preferred contact methods:</label>
+            </div>   
 
-                    <div class="form-group">
-                        <label for="Last name:"> Last name:</label>
-                        <input type="text" id="Last name:" name="Last name:" style="margin-left: 2px;">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="Email"> Email:</label>
-                        <input type="Email" id="Email" name="Email" style="margin-left: 30px;" >
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telephone"> Telephone:</label>
-                        <input type="telephone" id="telephone" name="telephone" >
-                    </div>
-                </form>
+             <div class="form-group">
+                <label for="Last name:"> Last name:</label>
+                <input type="text" id="Last name:" name="Last name:" style="margin-left: 2px;">
+                <input type="checkbox" name="Email"/> Email
             </div>
-        </section>
+
+            <div class="form-group">
+                <label for="Email"> Email:</label>
+                <input type="Email" id="Email" name="Email" style="margin-left: 30px;">
+                <input type="checkbox" name="Telephone"/> Telephone
+            </div>
+
+            <div class="form-group">
+                <label for="telephone"> Telephone:</label>
+                <input type="telephone" id="telephone" name="telephone" >
+            </div>
+            </fieldset>    
+            
+           <fieldset class="container2">
+               <legend class="otsikko2">Feedback:</legend>
+                <div class="messagelaatikko">
+                    <label for="fname">Message subject:</label><br>
+                    <input type="text" id="fname" name="fname"
+                    ><br>
+                    <textarea class="isoboxi" name="message" rows="10" cols="48" style="height:200px"></textarea>
+                </div>
+            
+            <div class="attachfile">
+                <label>Attach a file:</label>
+                <input type="file" id="real life"/>
+            </div>
+            <div class="nappi">
+                <button class="buttoni" type="submit" form="form1" value="Submit">Send</button>
+            </div>
+           </fieldset>
+        </div>
     </body>
 </html>
